@@ -89,6 +89,11 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/B5BSVqH.png");
     this.res.end();
+      } 
+  else if(request.text && botRegexCorrect.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif");
+    this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
