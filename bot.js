@@ -8,8 +8,8 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; 
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; botRegex4th = /^\/4th/; botRegexDae = /^\/dae/; botRegexBrad = /^\/brad/; botRegexPerkins = /^\/perkins/;  
+      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexNeat = /^\/neat/; botRegexReady = /^\/ready/;  botRegexWeGetIt = /^\/wegetit/; botRegexPrez = /^\/prez/; botRegexKelly = /^\/kelly/; botRegexDavey = /^\/davey/; botRegexMoustache = /^\/moustache/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
@@ -93,6 +93,61 @@ function respond() {
   else if(request.text && botRegexCorrect.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif");
+    this.res.end();
+  } 
+  else if(request.text && botRegexDae.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://imgur.com/HZNJtD4");
+    this.res.end();
+  } 
+  else if(request.text && botRegex4th.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/1440x747.png.ec41361b9bef44fe81620c7a482c823b");
+    this.res.end();
+  } 
+  else if(request.text && botRegexBrad.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://heavyeditorial.files.wordpress.com/2015/11/anonymous-kkk.jpg");
+    this.res.end();
+  } 
+  else if(request.text && botRegexNeat.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/500x491.jpeg.7d5f081021b14f05a5e99974dcec85dc.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexReady.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/194x259.png.8aa177596f9a4ff7b20e5156ab795f5a.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexKelly.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/375x666.png.46fe32f5c1434bda82bbd82e574c1720.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexPrez.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/1073x1280.jpeg.e094459c4dc34a07b03bfdf340a11d13.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexDavey.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/641x1136.jpeg.eafebe2e5f394926954a8aef0d0d8d66.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexMoustache.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/722x1280.jpeg.9d9958eacef543a5867e6d415c59d8a8.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexPerkins.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Not My MVP");
+    this.res.end();
+   } 
+  else if(request.text && botRegexWeGetIt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("You're GOAT");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
