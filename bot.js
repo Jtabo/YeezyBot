@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; botRegex4th = /^\/4th/; botRegexDae = /^\/dae/; botRegexBrad = /^\/brad/; botRegexPerkins = /^\/perkins/;  
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexNeat = /^\/neat/; botRegexReady = /^\/ready/;  botRegexWeGetIt = /^\/wegetit/; botRegexPrez = /^\/prez/; botRegexKelly = /^\/kelly/; botRegexDavey = /^\/davey/; botRegexMoustache = /^\/moustache/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/; botRegexFire = /^\/fire/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -138,6 +138,11 @@ function respond() {
   else if(request.text && botRegexMoustache.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/722x1280.jpeg.9d9958eacef543a5867e6d415c59d8a8.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexFire.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.trapnstuff.com/wp-content/uploads/2016/01/wpid-kanyewest-fire.jpg-1170x780.jpeg");
     this.res.end();
   } 
   else if(request.text && botRegexPerkins.test(request.text)) {
