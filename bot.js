@@ -132,7 +132,7 @@ function respond() {
   } 
   else if(request.text && botRegexBrad.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://heavyeditorial.files.wordpress.com/2015/11/anonymous-kkk.jpg");
+    postMessage("https://i.groupme.com/1152x1654.png.088b33f9180045bcba643d63111119a4.large");
     this.res.end();
   } 
   else if(request.text && botRegexNeat.test(request.text)) {
