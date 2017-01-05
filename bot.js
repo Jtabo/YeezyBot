@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; botRegex4th = /^\/4th/; botRegexBrad = /^\/brad/; botRegexPerkins = /^\/perkins/;  
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; botRegex4th = /^\/4th/; botRegexGiz = /^\ATS/; botRegexPerkins = /^\/perkins/;  
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexNeat = /^\/neat/; botRegexReady = /^\/ready/;  botRegexWeGetIt = /^\/wegetit/; botRegexPrez = /^\/prez/; botRegexKelly = /^\/kelly/; botRegexDavey = /^\/davey/; botRegexMoustache = /^\/moustache/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/; botRegexFire = /^\/fire/; botRegexWrong = /^\/wrong/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexSmh = /^\/smh/; botRegexWhat = /^\/what/;
@@ -125,9 +125,9 @@ function respond() {
     postMessage("https://i.groupme.com/1440x747.png.ec41361b9bef44fe81620c7a482c823b");
     this.res.end();
   } 
-  else if(request.text && botRegexBrad.test(request.text)) {
+  else if(request.text && botRegexGiz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1152x1654.png.088b33f9180045bcba643d63111119a4.large");
+    postMessage("Gizmo high AF");
     this.res.end();
   } 
   else if(request.text && botRegexNeat.test(request.text)) {
