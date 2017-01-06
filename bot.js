@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorrect = /^\/correct/; botRegex4th = /^\/4th/; botRegexGiz = /^\ATS/; botRegexPerkins = /^\/perkins/;  
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCorect = /^\/correct/; botRegex4th = /^\/4th/; botRegexGiz = /^\ATS/; botRegexPerkins = /^\/perkins/;  
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexNeat = /^\/neat/; botRegexReady = /^\/ready/;  botRegexWeGetIt = /^\/wegetit/; botRegexPrez = /^\/prez/; botRegexKelly = /^\/kelly/; botRegexDavey = /^\/davey/; botRegexMoustache = /^\/moustache/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/; botRegexFire = /^\/fire/; botRegexWrong = /^\/wrong/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexSmh = /^\/smh/; botRegexWhat = /^\/what/;
