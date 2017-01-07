@@ -31,6 +31,7 @@ function respond() {
       botRegexTw = /^\/twitch/i;  
       botRegexSh = /^\/shrug/; 
       botDuck = /^\/duck/;
+      botJohnny = /^\/johnny/;
   
     if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -170,9 +171,16 @@ function respond() {
     postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
     this.res.end();
   }
+  else if(request.text && botJohnny.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/399x500.png.a311fba0f1b5404b9122307fbbdefaeb");
+    this.res.end();
+  }
+  
+  
+  
+  
 }
-  
-  
 function postMessage(response) {
   var botResponse,options, body, botReq;
 
