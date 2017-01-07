@@ -35,7 +35,7 @@ function respond() {
       botKeller = /^\/keller/;
       botJarrod = /^\/jarrod/;
       botMatt = /^\/matt/;
-      botEA = /^\/prezeatsass/;
+      botEA = /^\/eatass/;
       botOld = /^\/oldmanprez/;
   
     if(request.text && botRegex.test(request.text)) {
@@ -199,7 +199,8 @@ function respond() {
   else if(request.text && botEA.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/500x378.gif.dd16504819f34f28bc8d4959cc61126e.large");
-    postMessage("https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif");
+    postMessage("Prez would you eat it?");
+    postMessage("https://i.groupme.com/298x65.png.a0bbf42de3684de6ac9100bc80410312");
     this.res.end();
   }
   else if(request.text && botOld.test(request.text)) {
