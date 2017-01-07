@@ -198,9 +198,9 @@ function respond() {
   }
   else if(request.text && botEA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/500x378.gif.dd16504819f34f28bc8d4959cc61126e.large");
-    postMessage("Prez would you eat it?");
     postMessage("https://i.groupme.com/298x65.png.a0bbf42de3684de6ac9100bc80410312");
+    postMessage("Prez would you eat it?");
+    postMessage("https://i.groupme.com/500x378.gif.dd16504819f34f28bc8d4959cc61126e.large");
     this.res.end();
   }
   else if(request.text && botOld.test(request.text)) {
