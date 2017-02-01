@@ -30,7 +30,6 @@ function respond() {
       botJohnny = /^\/johnny/;
       botKeller = /^\/keller/;
       botMatt = /^\/matt/;
-      botDae = /^\/dae/;
       botTrade = /^\/trade/;
 
   
@@ -166,11 +165,6 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/1130x1280.jpeg.82b56f506a194619bbda442f7b8e5f4c.large");
     this.res.end();
-  }
-  else if(request.text && botDae.test(request.text)) {
-  this.res.writeHead(200);
-  postMessage("https://i.groupme.com/570x960.png.b03b614ab3f84a90bbf40346201b9050");
-  this.res.end();
   }
   else if(request.text && botTrade.test(request.text)) {
   this.res.writeHead(200);
