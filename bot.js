@@ -15,14 +15,10 @@ function respond() {
       botRegexHeh = /^\/heh/; 
       botRegexSmh = /^\/smh/; 
       botRegexWhat = /^\/what/;
-      botRegexGiz = /^\ATS/; 
       botRegexNeat = /^\/neat/; 
       botRegexKelly = /^\/kelly/; 
-      botRegexPrez = /^\/prez/; 
-      botRegexDavey = /^\/davey/; 
       botRegexMoustache = /^\/moustache/;
-      botRegexReady = /^\/ready/;  
-      botRegexPerkins = /^\/perkins/;  
+      botRegexReady = /^\/ready/;   
       botRegexWeGetIt = /^\/wegetit/; 
       botRegexAd=/^\/advance/;
       botRegexRules = /^\/rules/
@@ -33,10 +29,10 @@ function respond() {
       botDuck = /^\/duck/;
       botJohnny = /^\/johnny/;
       botKeller = /^\/keller/;
-      botJarrod = /^\/jarrod/;
       botMatt = /^\/matt/;
-      botEA = /^\/eatass/;
-      botOld = /^\/oldmanprez/;
+      botDae = /^\/dae/;
+      botTrade = /^\/trade/;
+
   
     if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -91,11 +87,6 @@ function respond() {
     postMessage("https://media2.giphy.com/media/3o72F8t9TDi2xVnxOE/giphy.gif");
     this.res.end();
   } 
-  else if(request.text && botRegexGiz.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("Gizmo high AF");
-    this.res.end();
-  } 
   else if(request.text && botRegexNeat.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/500x491.jpeg.7d5f081021b14f05a5e99974dcec85dc.large");
@@ -111,24 +102,9 @@ function respond() {
     postMessage("https://i.groupme.com/375x666.png.46fe32f5c1434bda82bbd82e574c1720.large");
     this.res.end();
   } 
-  else if(request.text && botRegexPrez.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1073x1280.jpeg.e094459c4dc34a07b03bfdf340a11d13.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexDavey.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/641x1136.jpeg.eafebe2e5f394926954a8aef0d0d8d66.large");
-    this.res.end();
-  } 
   else if(request.text && botRegexMoustache.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/722x1280.jpeg.9d9958eacef543a5867e6d415c59d8a8.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexPerkins.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("Not My MVP");
     this.res.end();
    } 
   else if(request.text && botRegexWeGetIt.test(request.text)) {
@@ -186,29 +162,21 @@ function respond() {
     postMessage("https://i.groupme.com/540x712.png.b1f551f52e6141949ee3fb8864345b1b.large");
     this.res.end();
   }
-  else if(request.text && botJarrod.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/496x650.jpeg.98cd1c1efbbc41478964341a5f2ed6bf.large");
-    this.res.end();
-  }
   else if(request.text && botMatt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/1130x1280.jpeg.82b56f506a194619bbda442f7b8e5f4c.large");
     this.res.end();
   }
-  else if(request.text && botEA.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/298x65.png.a0bbf42de3684de6ac9100bc80410312");
-    postMessage("Prez would you eat it?");
-    postMessage("https://i.groupme.com/500x378.gif.dd16504819f34f28bc8d4959cc61126e.large");
-    this.res.end();
+  else if(request.text && botDae.test(request.text)) {
+  this.res.writeHead(200);
+  postMessage("https://i.groupme.com/570x960.png.b03b614ab3f84a90bbf40346201b9050");
+  this.res.end();
   }
-  else if(request.text && botOld.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/media/CJiiNsdUcAAcVbB.jpg");
-    this.res.end();
+  else if(request.text && botTrade.test(request.text)) {
+  this.res.writeHead(200);
+  postMessage("https://goo.gl/forms/6Jelu8s4PaZvWqZT2");
+  this.res.end();
   }
-  
   
   
   
