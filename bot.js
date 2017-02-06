@@ -31,7 +31,7 @@ function respond() {
       botKeller = /^\/keller/;
       botMatt = /^\/matt/;
       botTrade = /^\/trade/;
-      botTL = /^\/tradelog/;
+      botTL = /^\/tl/;
 
   
     if(request.text && botRegex.test(request.text)) {
