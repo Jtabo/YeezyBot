@@ -31,6 +31,7 @@ function respond() {
       botKeller = /^\/keller/;
       botMatt = /^\/matt/;
       botTrade = /^\/trade/;
+      botTL = /^\/tradelog/;
 
   
     if(request.text && botRegex.test(request.text)) {
@@ -169,6 +170,11 @@ function respond() {
   else if(request.text && botTrade.test(request.text)) {
   this.res.writeHead(200);
   postMessage("https://goo.gl/forms/6Jelu8s4PaZvWqZT2");
+  this.res.end();
+  }
+  else if(request.text && botTL.test(request.text)) {
+  this.res.writeHead(200);
+  postMessage("https://docs.google.com/spreadsheets/d/1UFLcU5wVLFuLMt1s1Qg6_wYZOdQkSLI9ZbhKfNCJtKo/edit");
   this.res.end();
   }
   
