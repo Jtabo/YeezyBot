@@ -19,6 +19,10 @@ function respond() {
       botRegexTw = /^\/twitch/i;  
       botRegexSh = /^\/shrug/; 
       botDuck = /^\/duck/;
+      botPause = /^\/pause/;
+      botNephew = /^\/nephew/;
+      botDelete = /^\/dlt/;
+      botDaFuq = /^\/dafuq/;
 
   
     if(request.text && botRegex.test(request.text)) {
@@ -92,6 +96,26 @@ else if(request.text && botRegexTw.test(request.text)) {
   else if(request.text && botDuck.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    this.res.end();
+  }
+    else if(request.text && botPause.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/903x1316.jpeg.076b83837c124ed0b79d4b7b18d43786");
+    this.res.end();
+  }
+    else if(request.text && botNephew.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/905x1318.jpeg.08c59fbc9279410391ad3f7ca718c3cc");
+    this.res.end();
+  }
+    else if(request.text && botDelete.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/1228x1376.jpeg.ee6d80a9762549e98f68f7b055b677ac");
+    this.res.end();
+  }
+      else if(request.text && botDaFuq.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i0.kym-cdn.com/entries/icons/original/000/018/489/nick-young-confused-face-300x256_nqlyaa.png");
     this.res.end();
   }
   
