@@ -23,6 +23,9 @@ function respond() {
       botNephew = /^\/nephew/;
       botDelete = /^\/dlt/;
       botDaFuq = /^\/dafuq/;
+      botMacros = /^\/macros/;
+      botJK = /^\Are Real/;
+      botArent = /^\Just Kidding/;
 
   
     if(request.text && botRegex.test(request.text)) {
@@ -116,6 +119,21 @@ else if(request.text && botRegexTw.test(request.text)) {
       else if(request.text && botDaFuq.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i0.kym-cdn.com/entries/icons/original/000/018/489/nick-young-confused-face-300x256_nqlyaa.png");
+    this.res.end();
+  }
+        else if(request.text && botMacros.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Are Real");
+    this.res.end();
+  }
+        else if(request.text && botJK.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Just Kidding");
+    this.res.end();
+  }
+        else if(request.text && botArent.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("They Aren't");
     this.res.end();
   }
   
